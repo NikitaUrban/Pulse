@@ -1,5 +1,10 @@
 @media (max-width: 1200px){
-    
+    .catalog{
+        &__content {
+           align-items: center;
+           flex-direction: column;
+        }
+    }   
 }
 @media (max-width: 767px){
     .header{
@@ -52,22 +57,20 @@
                 }
             }
         }
-        .slick-dots li button:before {
-            font-family: 'slick';
-             font-size: 6px;
-             line-height: 20px;
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 20px;
-             height: 20px;
-             content: '•'; /* <-- Вот этот символ */
-             text-align: center;
-             opacity: .25;
-             color: black;
-             -webkit-font-smoothing: antialiased;
-             -moz-osx-font-smoothing: grayscale;
-           }
+        
+    }
+    .catalog{
+        &__tabs {
+           align-items: center;
+           flex-direction: column;
+           
+        }
+        &__tab{
+            margin-bottom: 25px;
+            &:last-child{
+                margin-bottom: 0;   
+            }
+        }
     }
 }
 @media (max-width: 575px){
