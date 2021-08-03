@@ -42,6 +42,33 @@
             margin: 20px auto;
         }
     }
+    .carousel {
+        &__inner{
+            width: 100%; 
+            margin: 0;         
+            div{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        .slick-dots li button:before {
+            font-family: 'slick';
+             font-size: 6px;
+             line-height: 20px;
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 20px;
+             height: 20px;
+             content: '•'; /* <-- Вот этот символ */
+             text-align: center;
+             opacity: .25;
+             color: black;
+             -webkit-font-smoothing: antialiased;
+             -moz-osx-font-smoothing: grayscale;
+           }
+    }
 }
 @media (max-width: 575px){
     .header{
