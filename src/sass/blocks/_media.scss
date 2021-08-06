@@ -134,6 +134,11 @@
             text-align: center;
         }
     }
+    .modal{
+        label.error {
+            font-size: 13px;
+        }
+    }
     .footer{
         &__info{
             display: none;
@@ -141,8 +146,23 @@
     }
 }
 @media (max-width: 500px){
-
+    .modal{
+        width: 300px;
+        min-height: 390px;
+        .feed-form{
+            width: 220px;
+        }
+    }
 }
 @media (max-width: 380px){
-
+    .modal{
+        width: 240px;
+        .feed-form{
+            width: 160px;
+        }
+        label.error {
+            font-size: 10px;
+            font-weight: 700;
+        }
+    }
 }
